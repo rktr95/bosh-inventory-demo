@@ -19,7 +19,6 @@ Environment variables:
 
 ## Docker Compose
 ```bash
-cd deploy
 docker-compose up -d
 # App: http://localhost:8000/docs
 ```
