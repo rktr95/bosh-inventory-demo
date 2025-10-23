@@ -4,7 +4,7 @@ import hashlib
 import os
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 
-_MONGO_URL_ENV = os.getenv("MONGODB_URL")
+_MONGO_URL_ENV = "MONGODB_URL"
 _DEFAULT_URL = "mongodb://localhost:27017"
 _DB_NAME = os.getenv("MONGODB_DB", "inventory_db")
 
