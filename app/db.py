@@ -19,6 +19,7 @@ def get_database() -> AsyncIOMotorDatabase:
 
 async def connect_to_mongo() -> None:
 	global _client, _db
+	print("Env passed mongo url is ......... ", _MONGO_URL_ENV)
 	mongo_url = os.getenv(_MONGO_URL_ENV, _DEFAULT_URL)
 	print("Connecting to MongoDB... and inv is ......... ", mongo_url)
  
